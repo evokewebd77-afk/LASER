@@ -2,17 +2,18 @@
    Variables & Design System (Luxury Spa Bento)
    ========================================= */
 :root {
-    /* Color Palette - High-end Clinic */
-    --clr-bg: #F9F7F1; /* Warm Alabaster */
+    /* Color Palette - High-end Clinic (Updated to Root Hair & Skin Brand) */
+    --clr-bg: #FCF5EC; /* Warm Cream */
     --clr-card-bg: #FFFFFF;
-    --clr-text-main: #1A3B2B; /* Deep Forest Green */
-    --clr-text-muted: #5C6E64; /* Soft Sage */
-    --clr-accent: #D4AF37; /* Champagne Gold */
-    --clr-accent-hover: #C59F2E;
-    --clr-border: rgba(26, 59, 43, 0.08);
+    --clr-text-main: #522B39; /* Deep Burgundy/Plum */
+    --clr-text-muted: #54595F; /* Muted Charcoal */
+    --clr-accent: #F9B707; /* Vibrant Gold */
+    --clr-accent-hover: #D49B05;
+    --clr-border: rgba(82, 43, 57, 0.08); /* Derived from Burgundy */
     
     /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Montserrat', 'Lato', -apple-system, sans-serif;
+    --font-body: 'Lato', -apple-system, sans-serif;
     
     /* Spacing & Layout */
     --space-sm: 0.5rem;
@@ -33,7 +34,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 ::-moz-selection { background: rgba(0, 113, 227, 0.2); color: var(--clr-text-main); }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     background-color: var(--clr-bg);
     color: var(--clr-text-main);
     line-height: 1.6;
@@ -41,7 +42,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 { font-weight: 600; color: var(--clr-text-main); margin-bottom: var(--space-sm); line-height: 1.15; letter-spacing: -0.02em; }
+h1, h2, h3, h4 { 
+    font-family: var(--font-sans);
+    font-weight: 600; 
+    color: var(--clr-text-main); 
+    margin-bottom: var(--space-sm); 
+    line-height: 1.15; 
+    letter-spacing: -0.02em; 
+}
 h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
 h1 em { color: var(--clr-accent); font-style: normal; }
 h2 { font-size: clamp(1.8rem, 4vw, 2.2rem); }
@@ -1100,8 +1108,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
     margin: 0;
 }
 
-.bg-dark-green {
-    background-color: #143524;
+.bg-dark-brand {
+    background-color: var(--clr-text-main);
 }
 
 .bg-dark-main {
