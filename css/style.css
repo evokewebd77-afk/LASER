@@ -11,9 +11,11 @@
     --clr-accent-hover: #D49B05;
     --clr-border: rgba(82, 43, 57, 0.08); /* Derived from Burgundy */
     
-    /* Typography */
-    --font-sans: 'Montserrat', 'Lato', -apple-system, sans-serif;
-    --font-body: 'Lato', -apple-system, sans-serif;
+    /* Typography - Matched to roothairskin.com */
+    --font-heading: 'Josefin Sans', 'Montserrat', sans-serif;  /* h1/h2/h3 — same as live site */
+    --font-sans: 'Montserrat', sans-serif;                      /* nav, buttons, labels */
+    --font-body: 'Lato', sans-serif;                            /* body paragraphs */
+    --font-accent: 'Bellota', cursive;                          /* eyebrows, decorative tags */
     
     /* Spacing & Layout */
     --space-sm: 0.5rem;
@@ -43,12 +45,12 @@ body {
 }
 
 h1, h2, h3, h4 { 
-    font-family: var(--font-sans);
+    font-family: var(--font-heading);
     font-weight: 600; 
     color: var(--clr-text-main); 
     margin-bottom: var(--space-sm); 
     line-height: 1.15; 
-    letter-spacing: -0.02em; 
+    letter-spacing: 0.02em; 
 }
 h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
 h1 em { color: var(--clr-accent); font-style: normal; }
@@ -63,7 +65,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 .mt-4 { margin-top: 2rem; }
 .mb-4 { margin-bottom: 2rem; }
 .mt-auto { margin-top: auto; }
-.eyebrow { display: block; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--clr-text-muted); margin-bottom: 0.5rem; }
+.eyebrow { display: block; font-family: var(--font-accent); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--clr-text-muted); margin-bottom: 0.5rem; }
 .light-text, .light-text h2, .light-text h4, .light-text .eyebrow { color: #FFFFFF !important; }
 
 /* Buttons */
