@@ -267,7 +267,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
    Luxury Footer (Based on provided design)
    ========================================= */
 .luxury-footer {
-    background: var(--clr-text-main);
+    background: #1A0E13;
     color: rgba(255, 255, 255, 0.7);
     padding: 4rem 5%;
     font-family: var(--font-sans);
@@ -528,7 +528,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 
 /* Luxury CTA Section */
 .luxury-cta-section {
-    background: linear-gradient(135deg, var(--clr-text-main) 0%, #0d2017 100%);
+    background: linear-gradient(135deg, #3a1e28 0%, #2a1520 100%);
     padding: 0;
     overflow: hidden;
     color: #FFFFFF;
@@ -1113,7 +1113,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 }
 
 .bg-dark-main {
-    background-color: var(--clr-text-main);
+    background: linear-gradient(135deg, #3a1e28 0%, #2a1520 100%);
+    padding: 5rem 0;
 }
 
 .subsequent-grid {
