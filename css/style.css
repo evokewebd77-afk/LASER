@@ -1089,3 +1089,40 @@ a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
         background: #0d2017;
     }
 }
+
+/* =========================================
+   Full-Width Section Restructure
+   ========================================= */
+.full-width-section {
+    width: 100%;
+    position: relative;
+    padding: 4rem 0; /* Vertical padding around full-width sections */
+    margin: 0;
+}
+
+.bg-dark-green {
+    background-color: #143524;
+}
+
+.bg-dark-main {
+    background-color: var(--clr-text-main);
+}
+
+.subsequent-grid {
+    margin-top: 4rem !important; /* Override the 140px top margin for sections after the first */
+}
+
+.inner-grid {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Remove border-radius and borders from the cards inside full-width sections on desktop */
+@media (min-width: 1025px) {
+    .full-bleed-card {
+        border-radius: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+}
