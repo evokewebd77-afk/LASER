@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(this);
             // Replace this URL with your actual deployed Google Apps Script Web App URL
-            const appScriptURL = 'https://script.google.com/macros/s/AKfycbyboOXWOVButKEOj6jxCMkOJjxbpUTgBZwrr7drb3_Rw5z-MRZzfjN7yILs8kU_F7QZ/exec';
+            const appScriptURL = 'https://script.google.com/macros/s/AKfycbxVyEgVlD3ZNCJHCpCinAFzNPm5zfTm7bi_rkm3zmJ1g4qyLfx6qTI1xkAEWU79-V1m/exec';
 
             if (appScriptURL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') {
                 alert("Please add your Google Apps Script URL in js/script.js to enable form submission.");
